@@ -10,6 +10,8 @@
 - [paranoia](https://rubygems.org/gems/paranoia)
 - [foreman](https://rubygems.org/gems/foreman)
 - [faker](https://rubygems.org/gems/faker)
+- [rspec-rails](https://rubygems.org/gems/rspec-rails)
+- [factory_bot_rails](https://rubygems.org/gems/factory_bot_rails)
 
 ## Frontends
 
