@@ -23,11 +23,13 @@ gem 'paranoia', '~> 2.4', '>= 2.4.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'foreman', '~> 0.87.2'
   gem 'faker', '~> 2.19'
+  gem 'factory_bot_rails', '~> 6.2'
 end
 
 group :development do
@@ -41,7 +43,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
   gem 'rspec-rails', '~> 5.0', '>= 5.0.2'
-  gem 'factory_bot_rails', '~> 6.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

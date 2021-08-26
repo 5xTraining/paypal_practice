@@ -9,6 +9,7 @@
 - [aasm](https://rubygems.org/gems/aasm)
 - [paranoia](https://rubygems.org/gems/paranoia)
 - [foreman](https://rubygems.org/gems/foreman)
+- [kaminari](https://rubygems.org/gems/kaminari)
 - [faker](https://rubygems.org/gems/faker)
 - [rspec-rails](https://rubygems.org/gems/rspec-rails)
 - [factory_bot_rails](https://rubygems.org/gems/factory_bot_rails)
@@ -25,7 +26,7 @@
 ## Setup
 
 - run `bundle install` and `yarn install` to install all packages needed.
-- run `rake products:prepare` to generate dummy products.
+- run `rails products:prepare` to generate dummy products after running `rails db:migrate`.
 - then run `foreman serve` to launch local development environment.
 - have fun!
 
