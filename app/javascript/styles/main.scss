@@ -3,7 +3,7 @@ main {
 }
 
 nav.nav {
-  @apply bg-yellow-100 mb-2 px-4 py-2 flex justify-between;
+  @apply bg-yellow-50 mb-2 px-4 py-2 flex justify-between;
 
   a {
     @apply mx-2;
@@ -12,4 +12,14 @@ nav.nav {
 
 .flash {
   @apply bg-yellow-300 px-4 py-1 text-white mb-2;
+}
+
+form {
+  .input {
+    @apply border px-2 py-1 text-lg rounded outline-none;
+  }
+
+  .action-btn {
+    @apply px-2 py-1 rounded;
+  }
 }
