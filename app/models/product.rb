@@ -3,4 +3,8 @@ class Product < ApplicationRecord
 
   validates :title, presence: true
   validates :price, numericality: true
+
+  def cover_src
+    "#{cover}?ranom=#{id}"
+  end
 end

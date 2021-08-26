@@ -1,5 +1,18 @@
 <nav class="nav">
-  <ul>
-    <li>首頁</li>
-  </ul>
+  <div>
+    <ul>
+      <li><%= link_to "首頁", root_path %></li>
+    </ul>
+  </div>
+  <div class="flex">
+    <% if user_signed_in? %>
+      <%= link_to "購物車", "#" %> |
+      <%= link_to destroy_user_session_path, method: "delete", data: { confirm: "確認登出?" } do %>
+        <%= current_user.email %> 登出
+      <% end %>
+    <% else %>
+      <%= link_to "註冊", new_user_registration_path %> |
+      <%= link_to "登入", new_user_session_path %>
+    <% end %>
+  </div>
 </nav>

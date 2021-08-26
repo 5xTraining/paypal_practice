@@ -1,2 +1,21 @@
 
+<section class="product-list">
+  <% @products.each do |product| %>
+
+   <div class="product">
+     <figure>
+       <%= image_tag product.cover_src %>
+     </figure>
+     <div class="info">
+       <div class="title"><%= product.title %></div>
+       <div class="price">$<%= product.price %></div>
+     </div>
+     <div class="action">
+       <button>加到購物車</button>
+     </div>
+   </div>
+
+  <% end %>
+</section>
+
 <%= paginate @products %>
