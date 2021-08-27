@@ -5,5 +5,11 @@ Rails.application.routes.draw do
     post :add, path: "add/:id"
   end
 
+  resources :orders, only: [:index, :show] do
+    member do
+      delete :cancel
+    end
+  end
+
   root "products#index"
 end
