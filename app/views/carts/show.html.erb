@@ -1,31 +1,7 @@
 <h1 class="text-4xl font-thin">檢視購物車</h1>
 <%= link_to "清空購物車", cart_path, method: "delete" %>
-<table>
-  <thead>
-    <tr>
-      <th>商品名稱</th>
-      <th>單價</th>
-      <th>數量</th>
-      <th>小計</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% current_cart.items.each do |item| %>
-      <tr>
-        <td><%= item.product.title %></td>
-        <td><%= item.product.price %></td>
-        <td><%= item.quantity %></td>
-        <td><%= item.total %></td>
-      </tr>
-    <% end %>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">總計</td>
-      <td><%= current_cart.total %></td>
-    </tr>
-  </tfoot>
-</table>
+
+<%= render "shared/cart" %>
 
 <%= link_to "回賣場繼續選購", root_path %>
-<%= link_to "結帳", '#' %>
+<%= link_to "結帳", checkout_orders_path %>

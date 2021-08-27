@@ -1,0 +1,17 @@
+<h1 class="text-4xl font-thin">結帳</h1>
+
+<%= render "shared/cart" %>
+
+<%= form_for(@order) do |f|%>
+<div>
+  收件人：<%= f.text_field :receiver, class: 'input' %>
+</div>
+<div>
+  電話：<%= f.text_field :tel, class: 'input' %>
+</div>
+<div>
+  地址：<%= f.text_field :address, class: 'input' %>
+</div>
+
+<%= f.submit class: 'px-3 py-2 mt-2' %>
+<% end %>

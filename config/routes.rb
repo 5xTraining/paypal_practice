@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   end
 
   resources :orders, only: [:index, :show] do
+    collection do
+      get :checkout
+    end
+
     member do
       delete :cancel
     end
