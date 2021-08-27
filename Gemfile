@@ -30,6 +30,7 @@ group :development, :test do
   gem 'foreman', '~> 0.87.2'
   gem 'faker', '~> 2.19'
   gem 'factory_bot_rails', '~> 6.2'
+  gem 'timecop', '~> 0.9.4'
 end
 
 group :development do
