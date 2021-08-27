@@ -10,7 +10,7 @@
        <div class="price">$<%= product.price %></div>
      </div>
      <div class="action">
-       <button>加到購物車</button>
+       <%= link_to "加到購物車", add_cart_path(product.id), method: 'post' %>
      </div>
    </div>
 
