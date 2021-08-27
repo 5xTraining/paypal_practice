@@ -27,7 +27,7 @@
 
 - run `bundle install` and `yarn install` to install all packages needed.
 - run `rails products:prepare` to generate dummy products after running `rails db:migrate`.
-- then run `foreman serve` to launch local development environment.
+- then run `foreman start` to launch local development environment.
 - have fun!
 
 by eddie@5xcampus.com
