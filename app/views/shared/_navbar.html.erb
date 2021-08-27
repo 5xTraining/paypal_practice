@@ -6,7 +6,7 @@
   </div>
   <div class="flex">
     <% if user_signed_in? %>
-      <%= link_to "購物車(#{current_cart.items.count})", "#" %> |
+      <%= link_to "購物車(#{current_cart.items.count})", cart_path %> |
       <%= link_to destroy_user_session_path, method: "delete", data: { confirm: "確認登出?" } do %>
         <%= current_user.email %> 登出
       <% end %>
