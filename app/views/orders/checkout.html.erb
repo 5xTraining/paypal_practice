@@ -2,7 +2,7 @@
 
 <%= render "shared/cart" %>
 
-<%= form_for(@order) do |f|%>
+<%= form_for(@order, data: { controller: 'payment', 'payment-token-value': @token }) do |f|%>
 <div>
   收件人：<%= f.text_field :receiver, class: 'input' %>
 </div>
@@ -12,6 +12,9 @@
 <div>
   地址：<%= f.text_field :address, class: 'input' %>
 </div>
+
+<div data-payment-target="dropin"></div>
+<input type="hidden" name="nonce" data-payment-target="nonce">
 
 <%= f.submit class: 'px-3 py-2 mt-2' %>
 <% end %>

@@ -24,6 +24,8 @@ gem 'paranoia', '~> 2.4', '>= 2.4.3'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
+gem "braintree", "~> 4.3.0"
+gem 'figaro', '~> 1.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

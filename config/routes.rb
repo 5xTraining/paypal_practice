@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     post :add, path: "add/:id"
   end
 
-  resources :orders, only: [:index, :show] do
+  resources :orders, only: [:index, :show, :create] do
     collection do
       get :checkout
     end
